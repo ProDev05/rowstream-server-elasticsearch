@@ -1,0 +1,16 @@
+version: "2"
+services:
+  rowstream-api:
+    image: rowstreamdev/rowstream-api
+    ports: 
+      - 3000:3000
+      - 8080:8080
+    environment: 
+      - NODE_ENV=dev
+    logging:
+      driver: awslogs
+      options: 
+        awslogs-group: rowstream-dev
+        awslogs-region: us-east-2
+        awslogs-stream-prefix: api
+    command: bash -c "node dist/src/server.js"

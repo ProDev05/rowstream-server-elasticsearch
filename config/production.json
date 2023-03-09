@@ -1,0 +1,10 @@
+{
+  "elastic": {
+    "host": "https://vpc-rowstream3-672wh3sjxh3x6gtspl4xqgvx6m.us-east-2.es.amazonaws.com:443",
+    "disk_hack": false
+  },
+  "host": "https://rowstream.herokuapp.com",
+  "messaging": {
+    "should_notify": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "restartable": "rs",
+  "ignore": [".git", "node_modules/", "dist/"],
+  "watch": ["src/"],
+  "execMap": {
+    "ts": "node -r ts-node/register"
+  },
+  "events": {
+    "restart": "kill-port 3000,8080",
+    "crash": "kill-port 3000,8080"
+  },
+  "ext": "js,json,ts",
+  "delay": "1500"
+}

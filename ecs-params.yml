@@ -1,0 +1,12 @@
+version: 1
+task_definition:
+  task_execution_role: arn:aws:iam::289024160830:role/ecsTaskExecutionRole
+  environment:
+    name: "NODE_ENV"
+    value: "production"
+  services:
+    rowstream-api:
+      cpu_shares: 1024
+      mem_limit: 1024000000
+      repository_credentials:
+        credentials_parameter: arn:aws:secretsmanager:us-east-2:289024160830:secret:dev/DockerHubSecret-De0pxX

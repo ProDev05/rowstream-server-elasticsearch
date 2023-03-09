@@ -1,0 +1,34 @@
+{
+  "repository": {
+    "user": "elastic",
+    "profile": "elastic",
+    "session": "elastic",
+    "team": "elastic",
+    "session_general_stat": "elastic",
+    "session_additional1_stat": "elastic",
+    "session_additional2_stat": "elastic",
+    "session_stroke_data_stat": "elastic",
+    "event": "elastic",
+    "workout": "elastic",
+    "message": "elastic",
+    "jersey": "elastic"
+  },
+  "elastic": {
+    "host": "http://localhost:9200",
+    "disk_hack": true
+  },
+  "sendgrid": {
+    "api_key": "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"
+  },
+  "messaging": {
+    "should_notify": false
+  },
+  "verification": {
+    "from": "verification@rowstream.com",
+    "subject": "RowStream - Account Verification",
+    "email_template": "verification.hbs",
+    "success_template": "success.hbs"
+  },
+  "host": "https://rowstream.herokuapp.com",
+  "token_secret": "c163683a-62d2-40b4-89af-2a6835g69fw1"
+}

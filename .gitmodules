@@ -1,0 +1,3 @@
+[submodule "RowStreamSDK"]
+	path = RowStreamSDK
+	url = git+ssh://git@bitbucket.org:rowstream/sdk.git
